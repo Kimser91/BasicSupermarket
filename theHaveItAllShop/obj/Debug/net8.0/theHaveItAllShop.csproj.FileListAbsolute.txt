@@ -1,0 +1,14 @@
+C:\Users\kimse\source\repos\theHaveItAllShop\theHaveItAllShop\bin\Debug\net8.0\theHaveItAllShop.exe
+C:\Users\kimse\source\repos\theHaveItAllShop\theHaveItAllShop\bin\Debug\net8.0\theHaveItAllShop.deps.json
+C:\Users\kimse\source\repos\theHaveItAllShop\theHaveItAllShop\bin\Debug\net8.0\theHaveItAllShop.runtimeconfig.json
+C:\Users\kimse\source\repos\theHaveItAllShop\theHaveItAllShop\bin\Debug\net8.0\theHaveItAllShop.dll
+C:\Users\kimse\source\repos\theHaveItAllShop\theHaveItAllShop\bin\Debug\net8.0\theHaveItAllShop.pdb
+C:\Users\kimse\source\repos\theHaveItAllShop\theHaveItAllShop\obj\Debug\net8.0\theHaveItAllShop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kimse\source\repos\theHaveItAllShop\theHaveItAllShop\obj\Debug\net8.0\theHaveItAllShop.AssemblyInfoInputs.cache
+C:\Users\kimse\source\repos\theHaveItAllShop\theHaveItAllShop\obj\Debug\net8.0\theHaveItAllShop.AssemblyInfo.cs
+C:\Users\kimse\source\repos\theHaveItAllShop\theHaveItAllShop\obj\Debug\net8.0\theHaveItAllShop.csproj.CoreCompileInputs.cache
+C:\Users\kimse\source\repos\theHaveItAllShop\theHaveItAllShop\obj\Debug\net8.0\theHaveItAllShop.dll
+C:\Users\kimse\source\repos\theHaveItAllShop\theHaveItAllShop\obj\Debug\net8.0\refint\theHaveItAllShop.dll
+C:\Users\kimse\source\repos\theHaveItAllShop\theHaveItAllShop\obj\Debug\net8.0\theHaveItAllShop.pdb
+C:\Users\kimse\source\repos\theHaveItAllShop\theHaveItAllShop\obj\Debug\net8.0\theHaveItAllShop.genruntimeconfig.cache
+C:\Users\kimse\source\repos\theHaveItAllShop\theHaveItAllShop\obj\Debug\net8.0\ref\theHaveItAllShop.dll
