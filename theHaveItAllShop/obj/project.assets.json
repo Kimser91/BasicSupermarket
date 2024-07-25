@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kimse\\source\\repos\\theHaveItAllShop\\theHaveItAllShop\\theHaveItAllShop.csproj",
+      "projectUniqueName": "C:\\Users\\kimse\\source\\repos\\theHaveItAllShop\\BasicSupermarket\\theHaveItAllShop\\theHaveItAllShop.csproj",
       "projectName": "theHaveItAllShop",
-      "projectPath": "C:\\Users\\kimse\\source\\repos\\theHaveItAllShop\\theHaveItAllShop\\theHaveItAllShop.csproj",
+      "projectPath": "C:\\Users\\kimse\\source\\repos\\theHaveItAllShop\\BasicSupermarket\\theHaveItAllShop\\theHaveItAllShop.csproj",
       "packagesPath": "C:\\Users\\kimse\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kimse\\source\\repos\\theHaveItAllShop\\theHaveItAllShop\\obj\\",
+      "outputPath": "C:\\Users\\kimse\\source\\repos\\theHaveItAllShop\\BasicSupermarket\\theHaveItAllShop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
