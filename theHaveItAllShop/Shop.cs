@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Diagnostics.CodeAnalysis;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -10,13 +12,16 @@ namespace theHaveItAllShop
 {
     internal class Shop
     {
+
+        public List<Customer> Customers { get; set; }
+        public List<Item> parts { get; set; }
         public List<Item> ShopInventory { get; set; }
-        public List<Item> ListToDelete { get; set; }
+        public List<Item> ShoppingList { get; set; }
         public string userChoise;
         public string userPreference = null;
 
-        public string listToDelete;
-       
+
+
         public int index = 0;
         public string input = "n";
         public string NewItemCategory;
@@ -27,6 +32,12 @@ namespace theHaveItAllShop
         public int NewItemPrice;
         public Shop()
         {
+            Customers = new List<Customer>()
+            {
+                new Customer("Carl", "Abc Road 13. Sem", 99958586, 6500)
+            };
+
+
             ShopInventory = new List<Item>()
             {
                 new Item("Carpart", "Turbo", "Engine", 200, "BMW", "M5"),
@@ -67,15 +78,11 @@ namespace theHaveItAllShop
 
             };
 
+            ShoppingList = new List<Item>() { };
 
 
         }
 
-        public void ShowAllItems()
-        {
-            
-            
-        }
 
         public void ChoseAisle()
         {
@@ -89,16 +96,17 @@ namespace theHaveItAllShop
 
             if (userChoise == "1")
             {
+                userChoise = "Carpart";
                 Console.WriteLine("What carparts do you need?");
                 Console.WriteLine("Engine, Body, Interior, Suspenision, Brakes");
-                userChoise = Console.ReadLine();
+                userPreference = Console.ReadLine();
                 AisleSelector();
             }
             else if (userChoise == "2")
             {
                 Console.WriteLine("What food do you need?");
                 Console.WriteLine("Vegetables, Fruit, Berry");
-                userChoise = Console.ReadLine();
+                userPreference = Console.ReadLine();
                 AisleSelector();
             }
 
@@ -106,7 +114,7 @@ namespace theHaveItAllShop
             {
                 Console.WriteLine("What kind of tools do you need?");
                 Console.WriteLine("Handtool, Benchmachine, Powertool");
-                userChoise = Console.ReadLine();
+                userPreference = Console.ReadLine();
                 AisleSelector();
             }
             else if (userChoise == "4")
@@ -114,7 +122,7 @@ namespace theHaveItAllShop
                 InputForNewItem();
             }
 
-            else if (userChoise == "5") 
+            else if (userChoise == "5")
             {
                 RemoveItem();
             }
@@ -127,23 +135,24 @@ namespace theHaveItAllShop
         public void AisleSelector()
         {
 
-            List<Item> parts = (List<Item>)ShopInventory.Where(item => item.Category == userPreference).ToList();
+
             if (userPreference != null)
             {
+                parts = (List<Item>)ShopInventory.Where(item => item.Category == userChoise).ToList();
                 foreach (Item part in parts)
                 {
-                    Console.WriteLine(part.Name);
-                    Console.WriteLine(part.Price);
+                    Console.WriteLine($"{parts.IndexOf(part)}. {part.Name} {part.Price}$");
+
                 }
             }
-            else { foreach (var item in ShopInventory) { Console.WriteLine(item.Name + " " + item.Type); } }
+            else { foreach (var item in ShopInventory) { Console.WriteLine(ShopInventory.IndexOf(item) + item.Name + " " + item.Type); } }
             Console.ReadKey();
-            
+            AddToCart();
         }
 
 
 
-        public void InputForNewItem() 
+        public void InputForNewItem()
         {
             Console.WriteLine("What category do you want to add?");
             Console.WriteLine("Food, Tool or Carpart");
@@ -168,40 +177,88 @@ namespace theHaveItAllShop
             }
             else { AddNewItem(); }
         }
-        public void AddNewItem() 
+        public void AddNewItem()
         {
             if (NewItemCategory == "Carpart")
             {
                 ShopInventory.Add(new Item(NewItemCategory, NewItemName, NewItemType, NewItemPrice, NewItemMake, NewItemModel));
             }
             else { ShopInventory.Add(new Item(NewItemCategory, NewItemName, NewItemType, NewItemPrice)); }
-            ShowAllItems();
+            AisleSelector();
         }
 
 
-        public void RemoveItem() 
+        public void RemoveItem()
         {
-            ShopInventory.ForEach(x => Console.WriteLine($"{ShopInventory.IndexOf(x)}. {x.Name} "));
-            Console.WriteLine();
-            Console.WriteLine("What do you want to remove?");
+            ShopInventory.ForEach(x => Console.WriteLine($"{ShopInventory.IndexOf(x)}. {x.Name} {x.Price} "));
+            Console.WriteLine("Write Index nr of element to remove:");
             index = int.Parse(Console.ReadLine());
 
 
-
             ShopInventory.RemoveAt(index);
-
+            Console.WriteLine();
             Console.WriteLine("New list:");
             foreach (Item item in ShopInventory) { Console.WriteLine(item.Name); }
             Console.ReadKey();
+
+        }
+
+
+
+        public void AddToCart()
+        {
+            Console.WriteLine("Write index of item you want to buy");
+            index = int.Parse(Console.ReadLine());
+            if (userPreference != null)
+            {
+
+                for (int i = 0; i < parts.Count; i++)
+                {
+                    if (i == index) { ShoppingList.Add(parts[i]); }
+                }
+            }
+
+            else
+            {
+                foreach (Item item in ShopInventory)
+                {
+                    if (ShopInventory.IndexOf(item) == index) { ShoppingList.Add(item); }
+                }
+            }
+
+            foreach (Item item in ShoppingList) { Console.WriteLine(item.Name + " " + item.Price); }
+            Console.WriteLine("1. to check out, 2 to shop more");
+            string user = Console.ReadLine();
+            if (user == "2")
+            {
+                AisleSelector();
+            }
+            else { Console.WriteLine(CheckOut());
+                Console.ReadKey();
+                ChoseAisle();
+            }
+            user = null;
+        }
+
+
+        public decimal CheckOut()
+        {
+            decimal TotalCost = 0;
+            foreach (Item item in ShoppingList)
+            {
+                TotalCost += item.Price;
+            }
+            ShoppingList.Clear();
+
+            return TotalCost;
+        }
+
+
+        public void Customer() 
+        { 
             
         }
-
-        public void Remove() 
-        {
-
-        
-           
-        }
+     
 
         }
         

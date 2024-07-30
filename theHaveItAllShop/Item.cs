@@ -32,5 +32,7 @@ namespace theHaveItAllShop
             Type = type;
             Price = price;
         }
+
+
     }
 }
