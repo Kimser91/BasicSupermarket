@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{BD2C1714-7404-4110-8615-2A71B22D4204}|theHaveItAllShop\\theHaveItAllShop.csproj|solutionrelative:thehaveitallshop\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD2C1714-7404-4110-8615-2A71B22D4204}|theHaveItAllShop\\theHaveItAllShop.csproj|c:\\users\\kimstasjon\u00E6rpc\\source\\repos\\thehaveitallshop\\basicsupermarket\\thehaveitallshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD2C1714-7404-4110-8615-2A71B22D4204}|theHaveItAllShop\\theHaveItAllShop.csproj|solutionrelative:thehaveitallshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD2C1714-7404-4110-8615-2A71B22D4204}|theHaveItAllShop\\theHaveItAllShop.csproj|c:\\users\\kimstasjon\u00E6rpc\\source\\repos\\thehaveitallshop\\basicsupermarket\\thehaveitallshop\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD2C1714-7404-4110-8615-2A71B22D4204}|theHaveItAllShop\\theHaveItAllShop.csproj|solutionrelative:thehaveitallshop\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BD2C1714-7404-4110-8615-2A71B22D4204}|theHaveItAllShop\\theHaveItAllShop.csproj|c:\\users\\kimstasjon\u00E6rpc\\source\\repos\\thehaveitallshop\\basicsupermarket\\thehaveitallshop\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD2C1714-7404-4110-8615-2A71B22D4204}|theHaveItAllShop\\theHaveItAllShop.csproj|solutionrelative:thehaveitallshop\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BD2C1714-7404-4110-8615-2A71B22D4204}|theHaveItAllShop\\theHaveItAllShop.csproj|c:\\users\\kimstasjon\u00E6rpc\\source\\repos\\thehaveitallshop\\basicsupermarket\\thehaveitallshop\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD2C1714-7404-4110-8615-2A71B22D4204}|theHaveItAllShop\\theHaveItAllShop.csproj|solutionrelative:thehaveitallshop\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD2C1714-7404-4110-8615-2A71B22D4204}|theHaveItAllShop\\theHaveItAllShop.csproj|c:\\users\\kimstasjon\u00E6rpc\\source\\repos\\thehaveitallshop\\basicsupermarket\\thehaveitallshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD2C1714-7404-4110-8615-2A71B22D4204}|theHaveItAllShop\\theHaveItAllShop.csproj|solutionrelative:thehaveitallshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD2C1714-7404-4110-8615-2A71B22D4204}|theHaveItAllShop\\theHaveItAllShop.csproj|c:\\users\\kimstasjon\u00E6rpc\\source\\repos\\thehaveitallshop\\basicsupermarket\\thehaveitallshop\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD2C1714-7404-4110-8615-2A71B22D4204}|theHaveItAllShop\\theHaveItAllShop.csproj|solutionrelative:thehaveitallshop\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +30,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\KimStasjon\u00E6rPC\\source\\repos\\theHaveItAllShop\\BasicSupermarket\\theHaveItAllShop\\Cart.cs",
+              "RelativeDocumentMoniker": "theHaveItAllShop\\Cart.cs",
+              "ToolTip": "C:\\Users\\KimStasjon\u00E6rPC\\source\\repos\\theHaveItAllShop\\BasicSupermarket\\theHaveItAllShop\\Cart.cs",
+              "RelativeToolTip": "theHaveItAllShop\\Cart.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T09:47:19.558Z",
+              "IsPinned": true
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -42,15 +55,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Customer.cs",
               "DocumentMoniker": "C:\\Users\\KimStasjon\u00E6rPC\\source\\repos\\theHaveItAllShop\\BasicSupermarket\\theHaveItAllShop\\Customer.cs",
               "RelativeDocumentMoniker": "theHaveItAllShop\\Customer.cs",
               "ToolTip": "C:\\Users\\KimStasjon\u00E6rPC\\source\\repos\\theHaveItAllShop\\BasicSupermarket\\theHaveItAllShop\\Customer.cs",
               "RelativeToolTip": "theHaveItAllShop\\Customer.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAJAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T12:07:37.657Z"
+              "WhenOpened": "2024-07-30T12:07:37.657Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -60,14 +74,14 @@
               "RelativeDocumentMoniker": "theHaveItAllShop\\Shop.cs",
               "ToolTip": "C:\\Users\\KimStasjon\u00E6rPC\\source\\repos\\theHaveItAllShop\\BasicSupermarket\\theHaveItAllShop\\Shop.cs",
               "RelativeToolTip": "theHaveItAllShop\\Shop.cs",
-              "ViewState": "AQIAALYAAAAAAAAAAAAuwAABAAAeAAAA",
+              "ViewState": "AQIAANwAAAAAAAAAAAAAwPYAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-22T10:21:13.856Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Item.cs",
               "DocumentMoniker": "C:\\Users\\KimStasjon\u00E6rPC\\source\\repos\\theHaveItAllShop\\BasicSupermarket\\theHaveItAllShop\\Item.cs",
               "RelativeDocumentMoniker": "theHaveItAllShop\\Item.cs",
@@ -75,23 +89,12 @@
               "RelativeToolTip": "theHaveItAllShop\\Item.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAuwCAAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T10:14:17.663Z"
+              "WhenOpened": "2024-07-22T10:14:17.663Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Cart.cs",
-              "DocumentMoniker": "C:\\Users\\KimStasjon\u00E6rPC\\source\\repos\\theHaveItAllShop\\BasicSupermarket\\theHaveItAllShop\\Cart.cs",
-              "RelativeDocumentMoniker": "theHaveItAllShop\\Cart.cs",
-              "ToolTip": "C:\\Users\\KimStasjon\u00E6rPC\\source\\repos\\theHaveItAllShop\\BasicSupermarket\\theHaveItAllShop\\Cart.cs",
-              "RelativeToolTip": "theHaveItAllShop\\Cart.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T09:47:19.558Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\KimStasjon\u00E6rPC\\source\\repos\\theHaveItAllShop\\BasicSupermarket\\theHaveItAllShop\\Program.cs",
               "RelativeDocumentMoniker": "theHaveItAllShop\\Program.cs",
